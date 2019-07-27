@@ -31,7 +31,7 @@ def apply_gradients(model, optimizer, gradients):
     optimizer.apply_gradients(zip(gradients, model.variables), global_step=tf.train.get_or_create_global_step())
 
 
-class Modeo_eager():
+class eager_context_czxmodel():
     def __init__(self, param_dict):
         self.lr = param_dict['lr']
         self.epoch = param_dict['epoch']

@@ -159,9 +159,6 @@ class graph_context_czxmodel():
         self.padded_dict['usage_duration_full_list'] = self.param['size_of_space']['max_usage_full_len']
         self.padded_dict['usage_time_full_list'] = self.param['size_of_space']['max_usage_full_len']
 
-        
-        
-        
     def _report(self, label, start, num_iters, batch_size):
         avg_time = (time.time() - start) / num_iters
         dev = 'gpu' if tf.test.is_gpu_available() else 'cpu'

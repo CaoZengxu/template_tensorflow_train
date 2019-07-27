@@ -84,7 +84,7 @@ def nn_model_val_train(X, Y, x_test, param):
     #     val_x.append(X_val[col].values)
     #
     # model = Modeo_eager(param)
-    model = graph_context_ctr(param)
+    model = graph_context_czxmodel(param)
     model.train(train_x, y_train, (val_x, y_val))
     result = model.predict(test_x)
     return result
